@@ -1,0 +1,135 @@
+/* global */
+.over-x-hidden{
+    overflow-x: hidden;
+}
+.over-y-hidden{
+    overflow-y: hidden;
+}
+
+.fs-16{
+    font-size: 16px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.fs-28{
+    font-size: 28px;
+}
+.fs-32{
+    font-size: 32px;
+}
+
+.b-red-2{
+    border: 2px solid #E50914;
+}
+.b-red-3{
+    border: 3px solid #E50914;
+}
+
+.c-dark-white{
+    color: rgb(207, 207, 207);
+}
+.c-red{
+    color: #E50914;
+}
+.c-dark-grey{
+    color: #333340;
+}
+.b-red{
+    background-color: #E50914;
+}
+.b-dark-grey{
+    background-color: #333340;
+}
+
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+
+.g-3{
+    gap: 3px;
+}
+.g-5{
+    gap: 5px;
+}
+
+.border-1{
+    border: 1px solid #333340;
+}
+
+.hover-red:hover{
+    background-color: #E50914;
+    color: antiquewhite !important;
+    border: none;
+}
+.hover-c-white:hover{
+    color: antiquewhite !important;
+}
+.hover-border-red:hover{
+    border: 2px solid #E50914;
+}
+
+.box-top-movie{
+    height: 4rem;
+    border-radius: 2rem;
+}
+/* global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar .link {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar .link.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar .link:hover:not(.active) {
+    background-color: #E50914;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar .link {float: left;}
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar .link {
+        text-align: center;
+        float: none;
+    }
+}
